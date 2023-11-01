@@ -13,7 +13,7 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/cp6/HostHatch-API"
+      "url": "https://github.com/cp6/hosthatch-api"
     }
   ],
   "require": {
