@@ -5,7 +5,6 @@ use Corbpie\HostHatchAPI\HostHatch;
 
 $hh = new HostHatch();
 
-$hh->debug_request = false;
+$hh->setApiKey('XXXX-XXXX-XXXX');
 
-//echo json_encode($hh->getProducts());
 echo json_encode($hh->getServers());
