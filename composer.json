@@ -1,0 +1,28 @@
+{
+  "name": "corbpie/hosthatch-api",
+  "description": "HostHatch API class",
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "authors": [
+    {
+      "name": "corbpie",
+      "email": "contact@corbpie.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/cp6/HostHatch-API"
+    }
+  ],
+  "require": {
+    "php": "^8.2",
+    "ext-curl": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Corbpie\\HostHatchAPI\\": "src/"
+    }
+  }
+}
