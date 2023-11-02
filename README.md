@@ -11,7 +11,7 @@ An easy to implement and use PHP class for the [hosthatch](https://cloud.hosthat
 - [Installing & usage](#installing)
     - [Setting API key](#setting-api-key)
 - [Products](#products)
-  - [List all products](#list-products)
+    - [List all products](#list-products)
 - [Servers](#servers)
     - [Get servers](#list-servers)
     - [Get server](#list-server)
@@ -51,6 +51,7 @@ $hh = new HostHatch();
 ```
 
 #### Setting API key:
+
 <span id="setting-api-key"></span>
 **Option 1**
 
@@ -67,7 +68,6 @@ With ```setApiKey()``` (needs setting with each calling of class)
 ```php
 $hh->setApiKey('XXXX-XXXX-XXXX');
 ```
-
 
 ---
 
@@ -117,6 +117,90 @@ int `$server_id`
 
 ```php
 $hh->getServerStatus($server_id);
+```
+
+returns `array`
+
+---
+
+Boot server
+
+<span id="boot-server"></span>
+
+int `$server_id`
+
+```php
+$hh->bootServer($server_id);
+```
+
+returns `array`
+
+---
+
+Shutdown server
+
+<span id="shutdown-server"></span>
+
+int `$server_id`
+
+```php
+$hh->shutdownServer($server_id);
+```
+
+returns `array`
+
+---
+
+Reboot server
+
+<span id="reboot-server"></span>
+
+int `$server_id`
+
+```php
+$hh->rebootServer($server_id);
+```
+
+returns `array`
+
+---
+
+Upgrade server
+
+<span id="upgrade-server"></span>
+
+int `$server_id`
+
+```php
+$hh->upgradeServer($server_id);
+```
+
+returns `array`
+
+---
+
+Cancel server
+
+<span id="cancel-server"></span>
+
+int `$server_id`
+
+```php
+$hh->cancelServer($server_id);
+```
+
+returns `array`
+
+---
+
+Deploy / create a server
+
+<span id="deploy-server"></span>
+
+array `$parameters`
+
+```php
+$hh->deployServer();
 ```
 
 returns `array`
