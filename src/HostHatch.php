@@ -115,9 +115,9 @@ class HostHatch
         return $this->ApiCall("GET", "/servers/$server/status");
     }
 
-    public function deployServer(): array
+    public function deployServer(array $parameters): array
     {
-        return $this->ApiCall("POST", "/deploy");
+        return $this->ApiCall("POST", "/deploy", $parameters);
     }
 
     public function bootServer(int $server): array
