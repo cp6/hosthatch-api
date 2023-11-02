@@ -200,7 +200,7 @@ Deploy / create a server
 array `$parameters`
 
 ```php
-$hh->deployServer();
+$hh->deployServer($parameters);
 ```
 
 returns `array`
