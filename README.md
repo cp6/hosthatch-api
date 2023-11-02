@@ -10,9 +10,9 @@ An easy to implement and use PHP class for the [hosthatch](https://cloud.hosthat
 - [Features](#features)
 - [Installing & usage](#installing)
     - [Setting API key](#setting-api-key)
-- [Products](#pullzone)
+- [Products](#products)
   - [List all products](#list-products)
-- [Servers](#pullzone)
+- [Servers](#servers)
     - [Get servers](#list-servers)
     - [Get server](#list-server)
     - [Get server status](#list-server-status)
@@ -67,5 +67,58 @@ With ```setApiKey()``` (needs setting with each calling of class)
 ```php
 $hh->setApiKey('XXXX-XXXX-XXXX');
 ```
+
+
+---
+
+List available Host Hatch servers to deploy
+<span id="products"></span>
+<span id="list-products"></span>
+
+```php
+$hh->getProducts();
+```
+
+returns `array`
+
+---
+
+Get your current servers
+<span id="servers"></span>
+<span id="list-servers"></span>
+
+```php
+$hh->getServers();
+```
+
+returns `array`
+
+---
+
+Get server
+
+<span id="list-server"></span>
+
+int `$server_id`
+
+```php
+$hh->getServer($server_id);
+```
+
+returns `array`
+
+---
+
+Get server status
+
+<span id="list-server-status"></span>
+
+int `$server_id`
+
+```php
+$hh->getServerStatus($server_id);
+```
+
+returns `array`
 
 ---
