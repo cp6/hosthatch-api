@@ -171,8 +171,18 @@ Upgrade server
 
 int `$server_id`
 
+array `$parameters`
+
 ```php
-$hh->upgradeServer($server_id);
+
+```php
+
+$parameters = [
+  'product' => 'nvme-8gb',
+  'upgrade_disk' => false 
+];
+
+$hh->upgradeServer($server_id, $parameters);
 ```
 
 returns `array`
@@ -200,6 +210,15 @@ Deploy / create a server
 array `$parameters`
 
 ```php
+
+$parameters = [
+  'product' => 'nvme-2gb',
+  'location' => 'AMS',
+  'billing' => 'monthly',
+  'image' => 'ubuntu22',
+  'hostname' => 'test.com'
+];
+
 $hh->deployServer($parameters);
 ```
 
