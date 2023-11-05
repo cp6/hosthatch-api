@@ -16,10 +16,9 @@ class HostHatch
     {
         try {
 
-            if (!$this->constApiKeySet()) {
-                throw new \RuntimeException("You must provide an API key");
+            if ($this->constApiKeySet()) {
+                $this->api_key = self::API_KEY;
             }
-            $this->api_key = self::API_KEY;
 
         } catch (\Exception $exception) {//display error message
             echo $exception->getMessage();
@@ -38,6 +37,7 @@ class HostHatch
             if (!isset($api_key) || trim($api_key) === '') {
                 throw new \RuntimeException('$api_key cannot be empty');
             }
+
             $this->api_key = $api_key;
 
         } catch (\Exception $exception) {//display error message
@@ -47,6 +47,13 @@ class HostHatch
 
     protected function ApiCall(string $method, string $url, array $params = []): array
     {
+        if (!isset($this->api_key) || $this->api_key === '') {
+            return [
+                'http_code' => 500,
+                'response' => 'Please set your api key either with setApiKey() or the const API_KEY'
+            ];
+        }
+
         $curl = curl_init();
         if ($method === "GET") {//GET request
             if (!empty($params)) {
