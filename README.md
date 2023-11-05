@@ -1,6 +1,6 @@
 # HostHatch VPS API Class
 
-An easy to implement and use PHP class for the [hosthatch](https://cloud.hosthatch.com/a/3772) VPS API.
+An easy to implement and use PHP class for the [HostHatch](https://cloud.hosthatch.com/a/3772) VPS API V1.
 
 [![Generic badge](https://img.shields.io/badge/version-0.1-blue.svg)]()
 [![Generic badge](https://img.shields.io/badge/PHP-8.2-purple.svg)]()
@@ -24,6 +24,8 @@ An easy to implement and use PHP class for the [hosthatch](https://cloud.hosthat
     - [Cancel server](#cancel-server)
 
 ### 0.1 changes
+
+* Initial commits and files
 
 ### Requirements
 
@@ -174,9 +176,6 @@ int `$server_id`
 array `$parameters`
 
 ```php
-
-```php
-
 $parameters = [
   'product' => 'nvme-8gb',
   'upgrade_disk' => false 
@@ -195,8 +194,17 @@ Cancel server
 
 int `$server_id`
 
+array `$parameters`
+
+
 ```php
-$hh->cancelServer($server_id);
+$parameters = [
+  'reason' => 'No longer need this VPS',
+  'immediate' => false
+];
+
+$hh->cancelServer($server_id, $parameters);
+
 ```
 
 returns `array`
@@ -210,7 +218,6 @@ Deploy / create a server
 array `$parameters`
 
 ```php
-
 $parameters = [
   'product' => 'nvme-2gb',
   'location' => 'AMS',
