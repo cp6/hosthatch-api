@@ -65,10 +65,10 @@ const API_KEY = 'XXXX-XXXX-XXXX';
 
 **Option 2**
 
-With ```setApiKey()``` (needs setting with each calling of class)
+When you call a new class you can initialise with the API key
 
 ```php
-$hh->setApiKey('XXXX-XXXX-XXXX');
+$hh = new HostHatch('PUT-API-KEY-HERE');
 ```
 
 ---
