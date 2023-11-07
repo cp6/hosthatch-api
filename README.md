@@ -23,6 +23,8 @@ An easy to implement and use PHP class for the [HostHatch](https://cloud.hosthat
     - [Upgrade server](#upgrade-server)
     - [Cancel server](#cancel-server)
 
+**Note the Host Hatch API is seemingly still in development**
+
 ### 0.1 changes
 
 * Initial commits and files
