@@ -1,6 +1,6 @@
 # HostHatch VPS API Class
 
-An easy to implement and use PHP class for the [HostHatch](https://cloud.hosthatch.com/a/3772) VPS API v1.
+An easy to implement and use PHP class wrapper for the [HostHatch](https://cloud.hosthatch.com/a/3772) VPS API v1.
 
 [![Generic badge](https://img.shields.io/badge/version-0.1-blue.svg)]()
 [![Generic badge](https://img.shields.io/badge/PHP-8.2-purple.svg)]()
@@ -23,7 +23,7 @@ An easy to implement and use PHP class for the [HostHatch](https://cloud.hosthat
     - [Upgrade server](#upgrade-server)
     - [Cancel server](#cancel-server)
 
-**Note the Host Hatch API is seemingly still in development**
+**Note the Host Hatch API is seemingly still in development and not finalized or reliable**
 
 ### 0.1 changes
 
