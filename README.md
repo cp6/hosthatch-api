@@ -4,6 +4,7 @@ An easy to implement and use PHP class wrapper for the [HostHatch](https://cloud
 
 [![Generic badge](https://img.shields.io/badge/version-0.1-blue.svg)]()
 [![Generic badge](https://img.shields.io/badge/PHP-8.2-purple.svg)]()
+[![Generic badge](https://img.shields.io/badge/API-v1-blue.svg)]()
 
 ## Table of contents
 
