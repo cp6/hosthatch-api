@@ -1,16 +1,16 @@
-# HostHatch VPS API Class
+# HostHatch VPS API class wrapper
 
-An easy to implement and use PHP class wrapper for the [HostHatch](https://cloud.hosthatch.com/a/3772) VPS API v1.
+An easy to implement and use PHP class wrapper for the [HostHatch](https://cloud.hosthatch.com/a/3772) VPS API version 1.
 
 [![Generic badge](https://img.shields.io/badge/version-0.1-blue.svg)]()
 [![Generic badge](https://img.shields.io/badge/PHP-8.2-purple.svg)]()
-[![Generic badge](https://img.shields.io/badge/API-v1-green.svg)]()
+[![Generic badge](https://img.shields.io/badge/API-v1-red.svg)]()
 
 ## Table of contents
 
 - [Features](#features)
 - [Installing & usage](#installing)
-    - [Setting API key](#setting-api-key)
+    - [Setting your API key](#setting-api-key)
 - [Products](#products)
     - [List all products](#list-products)
 - [Servers](#servers)
